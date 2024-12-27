@@ -1,0 +1,41 @@
+.wps-orden-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.wps-cabecera {
+    background-color: #e3e3e3;
+    padding: 10px;
+    border-radius: 30px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.wps-cabecera p {
+    width: auto;
+}
+
+.wps-cabecera input {
+    width: auto;
+}
+
+.expanded-row {
+    background-color: #f5f5a6;
+    border-left: 5px solid #ffc107;
+}
+
+.ordenes-wps-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ordenesComponentes-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.totals-wps {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}

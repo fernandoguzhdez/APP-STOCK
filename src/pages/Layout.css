@@ -1,0 +1,29 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar-open .content {
+    margin-left: 200px;
+    /* El ancho que tenga tu sidebar */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    background-color: #f3f3f4;
+    margin-left: 60px;
+    margin-right: 0;
+}
+
+.back-button {
+    color: #333;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    color: #007bff;
+    /* Cambia de color al hacer hover */
+}

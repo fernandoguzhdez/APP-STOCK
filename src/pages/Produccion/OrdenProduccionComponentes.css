@@ -1,0 +1,86 @@
+.detalle-orden-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.detalle-cabecera-produccion {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 30px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.detalle-cabecera-produccion p {
+    width: auto;
+}
+
+.detalle-cabecera-produccion input {
+    width: auto;
+}
+
+.expanded-row {
+    background-color: #f5f5a6;
+    border-left: 5px solid #ffc107;
+}
+
+.ordenesComponentes-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Aplica a los tabs en general */
+.custom-tabs .nav-tabs {
+    border-bottom: none; /* Elimina la línea predeterminada debajo de los tabs */
+    margin: 0; /* Elimina márgenes del contenedor de los tabs */
+    background-color: #f0f0f0; /* Fondo gris para todo el área de los tabs */
+}
+
+/* Estilo de cada tab */
+.custom-tabs .nav-link {
+    background-color: #f0f0f0; /* Fondo gris */
+    color: #333; /* Color de texto */
+    border: none; /* Elimina bordes predeterminados */
+    margin: 0; /* Elimina márgenes */
+    padding: 12px 20px; /* Espaciado interno */
+    border-radius: 0; /* Asegúrate de que no haya esquinas redondeadas */
+    text-align: center; /* Centra el texto */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el tab activo */
+.custom-tabs .nav-link.active {
+    background-color: #d6d6d6; /* Fondo más oscuro para el tab activo */
+    color: #000; /* Texto más oscuro */
+    font-weight: bold; /* Hace que el texto se destaque */
+}
+
+/* Hover para todos los tabs */
+.custom-tabs .nav-link:hover {
+    background-color: #e0e0e0; /* Fondo más claro al pasar el mouse */
+}
+
+/* Elimina espacios no deseados dentro del contenedor de tabs */
+.custom-tabs .tab-content {
+    border: none; /* Elimina bordes alrededor del contenido del tab */
+    background-color: #f9f9f9; /* Fondo del contenido del tab */
+}
+
+.custom-tab {
+    background-color: #d3d3d3; /* Fondo gris */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Aumentar espacio */
+    width: 100%; /* Asegurarse de que ocupe todo el espacio disponible */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .custom-tab span {
+    display: inline-block; /* Asegurar que el span sea manejable */
+    width: 100%; /* Ocupa todo el ancho del botón */
+    height: 100%; /* Ocupa todo el alto del botón */
+  }
+  
+  .custom-tab.active {
+    background-color: #a9a9a9; /* Cambiar color cuando está activo */
+  }
+  

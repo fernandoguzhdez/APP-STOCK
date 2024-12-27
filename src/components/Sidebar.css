@@ -1,0 +1,163 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px; /* Ancho cuando está colapsado (solo íconos visibles) */
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  overflow-x: hidden;
+}
+
+.sidebar.open {
+  width: 200px; /* Ancho cuando está completamente abierto (íconos y texto visibles) */
+}
+
+.sidebar .hamburger,
+.sidebar .close-btn {
+  width: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin: 15px;
+  display: block;
+  text-align: center;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.sidebar .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los íconos cuando el menú está cerrado */
+  padding-top: 100px;
+  transition: align-items 0.3s ease; /* Transición suave para cuando cambia el alineamiento */
+}
+
+.sidebar.open .links {
+  align-items: flex-start; /* Alinea los íconos y texto a la izquierda cuando el menú está abierto */
+}
+
+.sidebar .menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 20px; /* Añadido padding lateral para mayor espaciado */
+  color: #fff;
+  text-decoration: none;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.sidebar.open .menu-link {
+  justify-content: flex-start; /* Alinea íconos y texto a la izquierda cuando el menú está abierto */
+}
+
+.sidebar .menu-link:hover {
+  background-color: #575757;
+}
+
+.sidebar .icon {
+  margin-right: 10px;
+  font-size: 24px;
+  display: flex;
+  align-items: center; /* Asegura que el ícono esté centrado verticalmente */
+}
+
+.sidebar .link-text {
+  display: none; /* Oculta el texto cuando el sidebar está colapsado */
+}
+
+.sidebar.open .link-text {
+  display: inline-block; /* Asegura que el texto se alinee correctamente */
+  vertical-align: middle; /* Alinea el texto al centro verticalmente con el ícono */
+  padding-left: 1rem;
+}
+
+.sidebar .submenu {
+  display: none; /* Oculta los submenús por defecto */
+}
+
+.sidebar.open .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.sidebar .submenu-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.sidebar .submenu-link:hover {
+  background-color: #575757;
+}
+
+.sidebar .menu-link.active .submenu {
+  display: flex; /* Muestra los submenús cuando se hace clic en el menú principal */
+}
+
+/* Hover que afecta toda la fila */
+.sidebar .menu-link:hover {
+  background-color: #fafbfd; /* Cambia el color de fondo de toda la fila */
+  color: #000; /* Color de texto cuando se pasa el ratón */
+  width: 100%; /* Asegura que cubra todo el ancho */
+  box-sizing: border-box;
+}
+
+/* Efecto hover para submenu */
+.sidebar .submenu-link:hover {
+  background-color: #fafbfd; /* Cambia el color de fondo del submenu */
+  cursor: pointer;
+  color: #000;
+}
+
+.hamburger {
+  cursor: pointer;
+  outline: none;
+  user-select: none; /* Evita que el texto sea seleccionable */
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  user-select: none; /* Asegura que las líneas no puedan ser seleccionadas */
+}
+
+.hamburger.open .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+.hamburger.open .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Restaurar las líneas cuando el menú está cerrado */
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3 {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}

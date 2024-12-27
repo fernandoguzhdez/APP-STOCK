@@ -1,0 +1,140 @@
+.home {
+    display: flex;
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    overflow-x: hidden;
+    /* Evitar desbordamiento horizontal */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    margin-left: 90px;
+    margin-right: 30px;
+    /* Ancho cuando el sidebar está parcialmente visible */
+}
+
+.sidebar-open .content {
+    margin-left: 220px;
+    /* Ajusta el desplazamiento del contenido al abrir el sidebar */
+}
+
+.table-accion-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.trash-icon {
+    color: #ff0000;
+}
+
+.edit-icon {
+    color: #3b5998;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: transform 0.5s ease;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination li a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #009879;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination li.active a {
+    background-color: #009879;
+    color: white;
+    border: 1px solid #009879;
+}
+
+.modal-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* src/styles/ComboBox.css */
+.combo-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.combo-box:focus {
+    border-color: #007bff;
+    outline: none;
+}
+  

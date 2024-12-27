@@ -1,0 +1,155 @@
+.ordenes-container {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 60px;
+}
+
+.ordenes-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+}
+
+.ordenes-table th,
+.ordenes-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ordenes-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.ordenes-table tr:hover {
+  background-color: #e6e2e2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.page-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.page-button.active,
+.page-button:hover {
+  background-color: #45a049;
+}
+
+.filter-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.filter-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+.clear-filters-btn {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.columnas {
+  text-align: left;
+}
+
+.totales-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.total-item {
+  padding: 0.5rem;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.total-item strong {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+.total-item span {
+  font-weight: normal;
+}
+  
+.bg-primary {
+  background-color: #007bff;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+

@@ -1,0 +1,101 @@
+/* src/pages/Planeacion/DetalleOrdenDeProduccion.css */
+
+.detalle-orden-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.detalle-cabecera {
+    background: linear-gradient(135deg, #3f49b8, #5267f0);
+    padding: 20px;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.detalle-cabecera p {
+    width: auto;
+}
+
+.detalle-cabecera input {
+    width: auto;
+}
+
+.item-line {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.item-line h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.item-detail {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.collapse-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.items-lines-container .item-detail {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 2rem;
+    padding: 10px;
+}
+
+.loading {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+}
+
+.no-items {
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+}
+
+.solicitud-compra-modal .modal-dialog {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.solicitud-compra-modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+.scrollable-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.list-group-item {
+    padding: 10px 20px;
+}
+
+.hoverable {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hoverable:hover {
+    background-color: #f0f8ff;
+}
