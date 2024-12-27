@@ -38,6 +38,7 @@ const OrdenProduccionWps = ({ isActive }) => {
     const [paroDeMaquina, setParoDeMaquina] = useState(false)
     const [showModalNuevo, setShowModalNuevo] = useState(false)
     const [showConfirm, setShowConfirm] = useState(false)
+    let prueba;
 
     const handleOpenModalNuevo = (e) => {
         setFechaFin(null)
